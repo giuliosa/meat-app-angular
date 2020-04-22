@@ -1,0 +1,14 @@
+<div class="mt-btn mt-btn-sucess mt-btn-big">
+  Seu carrinho está vazio
+  <div class="mt-login-details">
+    <div class="mt-login-details__modal">
+      <span *ngIf="isLoggedIn(); else notLoggedIn">
+        Olá, {{user().name}} | <a (click)="logout()">Sair</a>
+      </span>
+      <ng-template #notLoggedIn>
+          <a (click)="login()">Login</a>
+        </ng-template>
+    </div>
+  </div>
+
+</div>

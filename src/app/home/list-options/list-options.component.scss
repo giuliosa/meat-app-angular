@@ -1,0 +1,34 @@
+@import '../../../assets/sass/colors.scss';
+
+.mt-menu{
+  padding: 25px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    [class*='mt-icon']{
+      font-size: 40px;
+      color: white;
+
+      &:hover{
+        text-shadow: 0 0 .65px #fff,0 0 .65px #fff;
+      }
+
+    }
+
+    &__name{
+      transition: .3s all ease-in-out;
+      color: $main-white;
+      margin-left: 10px;
+      font-size: 20px;
+
+      &:hover{
+        text-shadow: 0 0 .65px #fff,0 0 .65px #fff;
+      }
+    }
+  }
+}

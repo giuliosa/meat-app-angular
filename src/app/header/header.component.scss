@@ -1,0 +1,90 @@
+@import "../../assets/sass/colors.scss";
+
+.mt-header{
+  width: 100%;
+  background-color: $main-red;
+  padding: 40px 10em 0 10em;
+}
+
+.mt-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5em;
+
+  &__logo{
+    font-size: 50px;
+    font-family: 'Yellowtail', cursive;
+    color: $main-white;
+    flex-grow: 1;
+  }
+
+  &__navigation{
+    font-size: 1em;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 4;
+
+    &__option{
+      margin: 0 20px;
+
+      a{
+        color: $main-white;
+        font-weight: bolder;
+        position: relative;
+        transition: .3s all ease-in-out;
+
+        &:hover{
+          color: $hover-white;
+          &::after{
+            content: "";
+            display: block;
+            width: 42px;
+            height: 2px;
+            margin-top: 6px;
+            background-color: #EE9604;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+
+  &__info{
+    display: flex;
+    color: $main-white;
+    align-items: center;
+
+    &__phone{
+      display: grid;
+      grid-template-areas:
+          "name select"
+          "phone-text phone-text";
+      grid-gap: 5px;
+      grid-template-columns: 200px 60px;
+      grid-template-rows: 18px;
+
+      &__name{
+        grid-area: name;
+        color: $main-yellow;
+      }
+      &__select{
+        grid-area: select;
+      }
+      &__phone-text{
+        grid-area: phone-text;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+      }
+    }
+
+    &__cart{
+      margin-left: 15px;
+
+    }
+  }
+}
+

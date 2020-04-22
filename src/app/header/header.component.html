@@ -1,0 +1,23 @@
+<!-- Início do header -->
+<header class="mt-header">
+  <nav class="mt-navbar">
+    <a [routerLink]="['/']" class="mt-navbar__logo">Meat</a>
+    <ul class="mt-navbar__navigation">
+      <li class="mt-navbar__navigation__option"><a [routerLink]="['/restaurants']">Restaurantes</a></li>
+      <li class="mt-navbar__navigation__option"><a [routerLink]="['/about']">Sobre</a></li>
+    </ul>
+
+    <div class="mt-navbar__info">
+      <div class="mt-navbar__info__phone">
+        <span class="mt-navbar__info__phone__name">Ligue e faça o pedido em</span>
+        <span class="mt-navbar__info__phone__select">Recife</span>
+        <span class="mt-navbar__info__phone__phone-text">81 99963-0458</span>
+      </div>
+      <div class="mt-navbar__info__cart">
+        <mt-user-detail></mt-user-detail>
+      </div>
+    </div>
+  </nav>
+
+</header>
+<!-- Fim do header -->

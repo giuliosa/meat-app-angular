@@ -1,0 +1,24 @@
+@import '../../../assets/sass/colors.scss';
+
+.mt-btn:hover .mt-login-details__modal{
+  display: block;
+}
+
+.mt-login-details{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  &__modal{
+    width: 94%;
+    background-color: $main-white;
+    display: none;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    top: 8px;
+    color: $main-red;
+  }
+}
