@@ -3,14 +3,13 @@
 .mt-header{
   width: 100%;
   background-color: $main-red;
-  padding: 40px 10em 0 10em;
+  padding: 0 10em;
 }
 
 .mt-navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1.5em;
 
   &__logo{
     font-size: 50px;
