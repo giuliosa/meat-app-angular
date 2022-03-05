@@ -1,3 +1,4 @@
+https://blog.knoldus.com/upgrade-to-angular-7-in-5-simple-steps/
 # Meat - Angular App Starter
 
 ## 1. Passos para começar

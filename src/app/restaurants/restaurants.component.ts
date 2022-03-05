@@ -5,8 +5,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
-import { Observable, from } from 'rxjs';
-import { switchMap, tap, debounceTime, distinctUntilChanged, catchError } from 'rxjs/operators';
+import { from } from 'rxjs';
+import { switchMap, debounceTime, distinctUntilChanged, catchError } from 'rxjs/operators';
 
 @Component({
   selector: 'mt-restaurants',
@@ -29,7 +29,7 @@ import { switchMap, tap, debounceTime, distinctUntilChanged, catchError } from '
 export class RestaurantsComponent implements OnInit {
 
   restaurants: Restaurant[]
-  searchBarState: string = 'hidden';
+  searchBarState = 'hidden';
 
   searchForm: FormGroup;
   searchControl: FormControl;
