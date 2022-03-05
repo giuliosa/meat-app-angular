@@ -21,10 +21,10 @@ export const ROUTES: Routes = [
       ]},
     { path: 'restaurants', component: RestaurantsComponent},
     { path: 'order',
-      loadChildren: './order/order.module#OrderModule',
+      loadChildren: () => import('./order/order.module').then(module => module.OrderModule),
       canLoad: [ LoggedInGuard ],
       canActivate: [ LoggedInGuard ]},
-    { path: 'about', loadChildren: './about/about.module#AboutModule'},
+    { path: 'about', loadChildren: () => import('./about/about.module').then(module => module.AboutModule)},
     { path: 'order-summary', component: OrderSummaryComponent},
     { path: '**', component: NotFoundComponent}
 
