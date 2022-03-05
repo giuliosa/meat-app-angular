@@ -1,5 +1,8 @@
-https://blog.knoldus.com/upgrade-to-angular-7-in-5-simple-steps/
 # Meat - Angular App Starter
+
+## Baseado no template abaixo
+
+[Sumo app design](https://www.behance.net/gallery/129371549/Food-Delivery-Mobile-App-Design?tracking_source=search_projects%7Cfood%20app)
 
 ## 1. Passos para começar
 
